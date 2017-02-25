@@ -309,6 +309,13 @@ index.html
     osmupdate norden.osm.pbf new_file.osm.pbf
     osm2pgsql --slim -C 1500 --number-processes 4 new_file.osm.pbf
 
+Using multiple update sources. After the first update add timestamp to command.
+
+    osmupdate norden.osm.pbf norden_update_hb.osm.pbf -v --base-url=http://download.geofabrik.de/europe/germany/bremen-updates/
+    osmupdate norden_update_hb.osm.pbf 2017-02-11T17:33:54Z norden_update_hb_hh.osm.pbf -v --base-url=http://download.geofabrik.de/europe/germany/hamburg-updates/
+    osmupdate norden_update_hb_hh.osm.pbf 2017-02-11T17:33:54Z norden_update_hb_hh_sh.osm.pbf -v --base-url=http://download.geofabrik.de/europe/germany/schleswig-holstein-updates/
+    
+
 ## Nominatim
 See: [OSM Wiki Nominatim](https://wiki.openstreetmap.org/wiki/Nominatim)  
 See: [Nominatim @ GitHub](https://github.com/twain47/Nominatim)
