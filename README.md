@@ -304,6 +304,11 @@ index.html
     </body>
     </html>
 
+## Update
+
+   osmupdate norden.osm.pbf new_file.osm.pbf
+   osm2pgsql --slim -C 1500 --number-processes 4 new_file.osm.pbf
+
 ## Nominatim
 See: [OSM Wiki Nominatim](https://wiki.openstreetmap.org/wiki/Nominatim)  
 See: [Nominatim @ GitHub](https://github.com/twain47/Nominatim)
